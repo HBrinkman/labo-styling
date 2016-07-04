@@ -3,6 +3,10 @@
 // Reset stylesheet
 @import "plugins/reset";
 
+// Load bourbon mixins
+@import "plugins/bourbon/bourbon";
+@import "plugins/neat/neat-helpers";
+
 // Load fontawesome
 @import "plugins/fontawesome/font-awesome";
 
