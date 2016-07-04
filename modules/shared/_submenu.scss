@@ -1,0 +1,45 @@
+ul.sidemenu {
+  padding: 81px 0 0 0;
+  position: fixed;
+  width: 200px;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  background: $sidemenu-background-color;
+  z-index: z-index($elements, sidemenu);
+  @include respond-to(small-screens) {
+    width: 40px;
+    //@include transition();
+    li a .sidemenu-title {
+      display: none;
+    }
+    &:hover {
+      width: 200px;
+      li a .sidemenu-title {
+        display: inline;
+      }
+    }
+  }
+  li {
+    a {
+      margin-left: 2px;
+      display: block;
+      width: 100%;
+      padding: 15px 10px;
+      color: $sidemenu-link-color;
+      text-decoration: none;
+      &:hover,
+      &.active {
+        margin-left: 0;
+        border-left: 2px solid $primary-color;
+        color: $white;
+        background: $sidemenu-link-hover-bg-color;
+      }
+      i {
+        margin-right: 10px;
+        width: 17px;
+        text-align: center;
+      }
+    }
+  }
+}

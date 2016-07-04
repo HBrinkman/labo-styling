@@ -1,0 +1,176 @@
+// Buttons
+//
+// Gebruik btn-primary voor primaire acties. Gebruik er ook maar 1 per groep.
+// Gebruik btn-error voor acties die met terughoudendheid moeten worden gebruikt. Denk aan verwijderen.
+//
+// Markup:
+//  <button class="btn {$modifiers}">Klik hier!</button>
+//
+// .btn-primary - Primaire button
+// .btn-error - Error button
+// . - Normale button
+//
+// sg-wrapper:
+// <div class=""><sg-wrapper-content/></div>
+//
+// Styleguide 5.11
+
+.btn-error {
+  background: $error-red;
+  color: $white;
+  border: darken($error-red, 10);
+  &:hover {
+    background: darken($error-red, 10);
+  }
+}
+
+// Buttons met een icoon
+//
+// Voor plaatsen in de UI waar een volledige tekst niet past, kan er een button met een icoon worden gebruikt.
+//
+// Markup: <div class="buttons">
+//     <button class="btn single-icon {$modifiers}"><i class="icon-info"></i></button>
+//</div>
+//
+// Styleguide 5.12
+
+.btn.single-icon {
+  padding: 5px 8px;
+
+  i {
+    margin: 1px 0 0;
+  }
+
+  &[disabled] i {
+    margin: 1px 0 0;
+    color: $disabled-color;
+  }
+}
+
+
+// Button active state (gebruikt in button-group)
+.btn.active {
+  background-color: $primary-color-dark;
+  border-color: $primary-color;
+  color: $white;
+}
+
+.btn-group>.btn:active,
+.btn-group>.btn.active {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+  text-shadow: none;
+}
+
+.buttons,
+.btn-group {
+  display: block;
+  margin: 10px 0;
+}
+
+.btn-group {
+  > .btn {
+    margin-left: 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+}
+
+.btn-group {
+  > .btn {
+    float: left;
+    @include border-radius(0);
+
+    &:first-child {
+      @include border-radius(4px 0 0 4px);
+    }
+
+    &:last-child {
+      @include border-radius(4px 0 0 4px);
+    }
+  }
+
+  .btn + .btn {
+    margin-left: -1px;
+  }
+}
+
+.topnav {
+  .btn {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-color-dark;
+      border-color: $primary-color-dark;
+      color: $main-text-color;
+    }
+  }
+}
+
+//Buttons are usualy placed on the right.
+div.buttons,
+.modal-body .buttons {
+  margin: 10px 0 0 0;
+  text-align: right;
+  .btn {
+    margin-bottom: 0;
+  }
+
+}
+
+//Buttons within tables
+.tz-table tr td .btn {
+  font-size: rs(13, 13);
+}
+
+//Buttons next to headings
+.heading-radios,
+.btn-heading {
+  float: right;
+  position: relative;
+  top: 8px;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.btn {
+  margin: 0;
+  padding: 10px 15px;
+  &.btn-primary {
+    &.btn-disabled {
+      color: $disabled-color;
+      border: none;
+    }
+  }
+  &.btn-floating {
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    background: $primary-color;
+    color: $white;
+    text-align: center;
+    @include border-radius(50%);
+    @include box-shadow(2px, 2px, 4px, rgba(#000000, 0.25));
+    @include transform(rotate(90deg));
+    &:hover,
+    .active {
+      background: $primary-color-dark;
+    }
+    i {
+      margin: 0;
+      height: 25px;
+      width: 25px;
+      font-size: 2em;
+      line-height: 0.9em;
+    }
+  }
+}

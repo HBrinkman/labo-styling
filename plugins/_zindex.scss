@@ -1,0 +1,31 @@
+// Z-index mixin
+//
+// Mixin om z-indexes applicatie breedt goed te beheren. Deze functie geeft de plaats in de array van elementen terug.
+// Des te lager het element in de lijst staat, des te hoger het z-index getal.
+//
+// $list - De lijst met elementen waaruit de z-index wordt bepaald.
+// $element - Het element uit de lijst, waarvan je de z-index wilt bepalen.
+//
+// Styleguide mixins.z-index
+
+$elements: 	topbar
+logout
+logo
+footer
+footer-buttons
+side-nav
+jquery-ui
+modal !default;
+
+//Return only valid z-indexes
+@function z-index($list, $element) {
+
+  $z-index: index($list, $element);
+
+  @if $z-index {
+    @return $z-index;
+  }
+
+  @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
+  @return null;
+}

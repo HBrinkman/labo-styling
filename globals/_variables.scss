@@ -1,0 +1,111 @@
+// Variables
+//
+// Gebruikte variables
+//
+// Styleguide 1.0
+
+// Fontsizes
+//
+// De default fonts en font-sizes. Op basis van deze font sizes worden de andere font sizes bepaald m.b.v. de functie relative-size (rs) [relative-size](/section/2.1)
+//
+// Styleguide 1.1
+$base-fs: 16;
+$normal-fs: 13;
+
+// Base font settings
+$default-font: "open_sansregular",Arial, sans-serif;
+$default-font-bold: "open_sanssemibold", Arial, sans-serif;
+$font-header: "open_sansbold", Verdana, sans-serif;
+
+//Line-height
+$default-line-height: rs(27, $normal-fs);
+
+// Kleuren
+//
+// De hoofdkleuren
+//
+
+// Color palette
+$primary-color: #59C0CA;
+$primary-color-dark: darken($primary-color, 10);
+$primary-color-orange: #F78100;
+$primary-color-orange-dark: darken($primary-color-orange, 5);
+$secondary-color: #666666;
+$dark-blue: #344052;
+$dark-grey: #C0C4C9;
+$grey: #F6F6F6;
+$light-grey: #F4F4F4;
+$secondary-grey: #E1E3E6;
+$tertiary-grey: #D8D8D8;
+$disabled-bg-grey: #E0E2E5;
+$white: #FFFFFF;
+$black: #000000;
+$very-dark-grey: lighten($black, 20);
+
+$disabled-color: darken($grey, 25);
+
+// Body
+$body-background-color: $light-grey;
+
+// Tekst kleuren
+
+// Text colors
+$main-text-color: #434343;
+$secondary-text-color: #7D8492;
+$tertiary-text-color: #B3B3AF;
+$placeholder-text-color: #C0C4C9;
+
+// Topbar
+$topbar-primary-background-color: $white;
+$topbar-primary-text-color: $main-text-color;
+$topbar-primary-font: "open_sansbold", Arial, sans-serif;
+$topbar-secondary-background-color: $primary-color;
+$topbar-secondary-text-color: $white;
+$topbar-tertiary-text-color: #7C8492;
+$topbar-menu-background-color: #344052;
+$topbar-menu-header-color: #707B8C;
+$topbar-menu-header-border: 1px solid #71777C;
+$topbar-menu-body-color: $white;
+$topbar-menu-body-border: 1px solid #495465;
+$topbar-menu-body-link-hover-color: #717b8c;
+
+$sidemenu-background-color: #2F3949;
+$sidemenu-link-color: #8C94A6;
+$sidemenu-link-hover-bg-color: #4E596B;
+
+// Mijn gesprekken
+$bericht-systeem-bg-color: #B8EEFF;
+$bericht-eigen-bg-color: #DBEDF2;
+$bericht-eigen-border-color: #D0E7ED;
+
+// Feedback kleuren
+// Error colors
+$error-lighter-red: #ffbdb8;
+$error-red: #DB585C;
+$error-darker-red: #9e1f00;
+$warning-lighter-yellow: #ffe8ad;
+$warning-yellow: #feb800;
+$warning-darker-yellow: #b99b00;
+$success-lighter-green: #ccffcc;
+$success-green: #2daa1e;
+$success-darker-green: #0e9000;
+$info-light-blue: #D9EDF7;
+$info-blue: #31708F;
+
+// Kleuren tabellen
+$table-header-color: #9B9B9B;
+
+// Zindex elementen
+$elements: 	sidemenu
+            topbar
+            dropdown
+            fixed-sub-header
+            sub-menu
+            logout
+            logo
+            footer
+            footer-buttons
+            side-nav
+            jquery-ui
+            notifications
+            modal;

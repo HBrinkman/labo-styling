@@ -1,0 +1,177 @@
+// Mixins
+//
+// LabOnline mixins
+//
+// Styleguide 2.0
+
+// Relative-size
+//
+// Gebaseerd op relative-size functie van [Stitch](http://stichcss.com).
+//
+// Geeft font-size terug in em
+//
+
+@function relative-size($target, $context: $base-fs, $unit:em) {
+
+  @return #{$target/$context+$unit};
+
+}
+// styleguide:ignore:end
+
+// Short alias
+@function rs($target, $context: $base-fs, $unit:em) {
+
+  @return relative-size($target, $context, $unit);
+
+}
+
+
+// Label breedte
+
+
+@mixin set-label-width($labelWidth:$default-label-width, $extraClass: false) {
+  @if $extraClass != false {
+    div.question.#{$extraClass} {
+      > label {
+        width: #{$labelWidth}px;
+      }
+
+      div.answer {
+        padding-left: #{$labelWidth}px;
+      }
+
+    }
+  } @else {
+    div.question {
+      > label {
+        width: #{$labelWidth}px;
+      }
+
+      div.answer {
+        padding-left: #{$labelWidth}px;
+      }
+    }
+  }
+
+}
+
+
+// Label line-height
+
+@mixin set-lineheight-label($labelLineHeight:$default-line-height, $extraClass: false) {
+  @if $extraClass != false {
+    div.question.#{$extraClass} {
+      > label {
+        line-height: #{$labelLineHeight};
+      }
+
+    }
+  } @else {
+    div.question {
+      > label {
+        line-height: #{$labelLineHeight};
+      }
+    }
+  }
+
+}
+
+// Media queries
+
+$break-small: 70em;
+$break-medium: 1280px;
+$break-large: 1440px;
+@mixin respond-to($media) {
+  @if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (max-width: $break-medium) { @content; }
+  }
+  @else if $media == small-screens {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else {
+    @warn "$media bestaat niet.";
+  }
+}
+
+// Loading animation
+
+@mixin loading-animation() {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: $tertiary-grey;
+  background: $placeholder-text-color;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, $tertiary-grey), color-stop(18%, $placeholder-text-color), color-stop(33%, $tertiary-grey));
+  background: -webkit-linear-gradient(left, $tertiary-grey 8%, $placeholder-text-color 18%, $tertiary-grey 33%);
+  background: linear-gradient(to right,  $tertiary-grey 8%,$placeholder-text-color 18%, $tertiary-grey 33%);
+  -webkit-background-size: 400px 30px;
+  background-size: 400px 30px;
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+    background-position: 0px 0
+  }
+  100%{
+    background-position: 400px 0
+  }
+}
+
+// Border-radius
+
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+
+@mixin border-radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  border-radius: $amount;
+}
+
+// Box-shadow
+
+@mixin box-shadow($offset-x: 0, $offset-y: 2px, $blur: 2px, $color: $tertiary-grey, $inset: null) {
+  @if ($offset-x == none) {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  } @else if ($inset == none) {
+    -webkit-box-shadow: $offset-x $offset-y $blur $color;
+    -moz-box-shadow: $offset-x $offset-y $blur $color;
+    box-shadow: $offset-x $offset-y $blur $color;
+  } @else {
+    -webkit-box-shadow: $inset $offset-x $offset-y $blur $color;
+    -moz-box-shadow: $inset $offset-x $offset-y $blur $color;
+    box-shadow: $inset $offset-x $offset-y $blur $color;
+  }
+}
+
+// Transition
+
+@mixin transition($property: all, $time: 0.5s, $easing: ease) {
+  -webkit-transition: $property $time $easing;
+  -moz-transition: $property $time $easing;
+  -ms-transition: $property $time $easing;
+  -o-transition: $property $time $easing;
+  transition: $property $time $easing;
+}
+
+// Full cover background
+
+@mixin full-cover-background($background-image) {
+  background-image: url($background-image);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,61 @@
+// Typography
+//
+// Aantal default headers
+//
+// markup:
+// <h1>Header 1</h1>
+// <p>Mauris feugiat suscipit turpis, ut rhoncus lectus finibus sed. Etiam suscipit consectetur eros vitae venenatis.</p>
+// <h2>Header 2</h2>
+// <p>Mauris feugiat suscipit turpis, ut rhoncus lectus finibus sed. Etiam suscipit consectetur eros vitae venenatis.</p>
+// <h3>Header 3</h3>
+// <p>Mauris feugiat suscipit turpis, ut rhoncus lectus finibus sed. Etiam suscipit consectetur eros vitae venenatis.</p>
+//
+// Styleguide 4.0
+
+h1, h2, h3 {
+  margin: 0 0 5px 0;
+  color: $main-text-color;
+  font-family: $font-header;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: rs(18, $normal-fs);
+  font-weight: bold;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: rs(21, $normal-fs);
+  font-weight: normal;
+}
+
+h3 {
+  font-size: rs($base-fs);
+  font-weight: bold;
+}
+
+h1.content-header {
+  float: left;
+  display: inline-block;
+  line-height: rs(32, $base-fs);
+}
+
+p {
+  line-height: rs(24, $base-fs);
+  &.error-text {
+    color: $error-red;
+  }
+  strong {
+    font-family: $font-header;
+    font-weight: bold;
+  }
+}
+
+a {
+  color: $primary-color;
+  &:hover {
+    color: $primary-color-dark;
+  }
+}
