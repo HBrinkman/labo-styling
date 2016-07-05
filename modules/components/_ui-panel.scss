@@ -1,0 +1,39 @@
+// Bijvoorbeeld: Opzoekcriteria
+.ui-panel.ui-widget {
+  padding: 10px;
+  border: none;
+  background: none;
+  .ui-panel-titlebar {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $tertiary-grey;
+    background: $grey;
+    color: $secondary-text-color;
+    text-decoration: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    &.collapsed {
+      border-bottom: none;
+      background: $white;
+      @include border-radius($border-radius-small);
+      &:hover {
+        background: $tertiary-grey;
+      }
+      i.fa.fa-chevron-down {
+        @include transform(rotate(90deg));
+      }
+    }
+  }
+  .ui-panel-content {
+    padding: 10px;
+    border: 1px solid $secondary-grey;
+    border-top-color: transparent;
+    background: $white;
+    @include border-radius(0 0 $border-radius-small $border-radius-small);
+    .fieldset {
+      padding: 0;
+      border: none;
+    }
+  }
+}
