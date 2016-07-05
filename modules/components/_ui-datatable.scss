@@ -1,3 +1,50 @@
 .ui-datatable {
-
+  thead > tr > th {
+    &.ui-widget-header {
+      background: $grey;
+      @include border-radius($border-radius-small $border-radius-small 0 0);
+      &.ui-state-hover {
+        border: 1px solid $primary-color;
+      }
+      .clickable {
+        color: $primary-color;
+      }
+    }
+  }
+  tbody.ui-datatable-data {
+    > tr {
+      &.ui-datatable-even {
+        background: $white;
+      }
+      &.ui-datatable-odd {
+        background: $grey;
+      }
+      &.ui-state-active,
+      &.ui-selected {
+        color: $primary-color;
+        background: rgba($primary-color, 0.2);
+      }
+      &:hover {
+        td {
+          background: rgba($secondary-grey, 0.8);
+        }
+      }
+      > td {
+        padding: 5px;
+        border: 1px solid $grey;
+        &:hover {
+          a {
+            color: $primary-color-dark;
+          }
+        }
+        a {
+          color: $primary-color;
+          &:hover {
+            color: $primary-color-dark;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }

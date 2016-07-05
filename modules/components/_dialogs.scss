@@ -1,0 +1,35 @@
+.ui-widget-overlay {
+  background: rgba($black, 0.9);
+}
+
+.ui-dialog {
+  padding: 0;
+  @include border-radius($border-radius-medium);
+  .ui-dialog-content {
+    padding: 0;
+    .ui-dialog-titlebar {
+      padding: 0;
+      .ui-widget-header {
+        padding: 10px;
+        background: $grey;
+        border: none;
+        border-bottom: 1px solid $secondary-grey;
+        @include border-radius($border-radius-medium $border-radius-medium 0 0);
+        .ui-dialog-title {
+          > img {
+            display: none;
+          }
+        }
+        .ui-dialog-titlebar-close {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+  .ui-widget-content {
+    background: $white;
+    .ui-tabset .ui-tabs-panel {
+      padding: 0;
+    }
+  }
+}
