@@ -1,5 +1,101 @@
 // Buttons
 //
+// Om een button te stylen voeg je de class <code>.btn</code> toe.
+//
+// Om de buttons rechts uit te lijnen plaats de button in een container met de class <code>.buttons</code>.
+//
+// .btn-primary       - Primaire buttons trekken meer de attentie van de gebruiker en zijn bedoeld voor primaire acties.
+//
+//Markup: <div class="buttons">
+//     <button class="btn {{modifier_class}}">Touch me!</button>
+//</div>
+//
+// Styleguide componenten.buttons
+
+$btn-default-bg: $white;
+$btn-default-color: $primary-color;
+$btn-default-border: 1px solid transparent;
+$btn-default-radius: 2px;
+$btn-default-margin-bottom: 0;
+$btn-default-padding: 0;
+$btn-default-fs: rs($base-fs);
+$btn-primary-bg: $primary-color;
+$btn-primary-border-color: $primary-color;
+$btn-primary-color: $white;
+$btn-hover-border-color: $primary-color;
+$btn-hover: $primary-color;
+$btn-hover-color: $white;
+$btn-icon-margin: 1px 6px 0 -3px !default;
+$btn-disabled-bg: $grey;
+$btn-disabled-border-color: $disabled-color;
+$btn-disabled-color: $disabled-color;
+
+.btn,
+.btn-primary {
+  padding: $btn-default-padding;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $btn-default-bg;
+  border: $btn-default-border;
+  border-radius: $btn-default-radius;
+  margin-bottom: $btn-default-margin-bottom;
+  font-size: rs($btn-default-fs);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: $btn-default-color;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.btn {
+  i {
+    margin: $btn-icon-margin;
+  }
+}
+
+.btn:hover {
+  border-color: $btn-hover-border-color;
+  background-color: $btn-hover; /* Old browsers */
+  color: $btn-hover-color;
+  cursor: pointer;
+}
+
+//Primary button styling
+.btn-primary {
+  background-color: $btn-primary-bg;
+  border-color: $btn-primary-border-color;
+  color: $btn-primary-color;
+}
+
+
+// Disabled
+//
+// Om een button disabled te maken voeg je het attribute <code>disabled</code> of de class <code>btn-disabled</code> toe
+//
+// Markup: <div class="buttons">
+//     <button class="btn" disabled="disable">Disabled button</button>
+//     <input type="button" class="btn" value="Disabled button" disabled="disabled" />
+//     <a href="javascript:void(0);" class="btn btn-disabled">Disabled button</a>
+//</div>
+//
+// Styleguide componenten.buttons.disabled
+
+.btn.btn-disabled,
+.btn.btn-disabled:hover,
+.btn[disabled],
+.btn[disabled]:hover  {
+  border-color: $btn-disabled-border-color;
+  background-color: $btn-disabled-bg;
+  color: $btn-disabled-color;
+  cursor: default;
+}
+
+// Buttons
+//
 // Gebruik btn-primary voor primaire acties. Gebruik er ook maar 1 per groep.
 // Gebruik btn-error voor acties die met terughoudendheid moeten worden gebruikt. Denk aan verwijderen.
 //
@@ -172,5 +268,18 @@ div.buttons,
       font-size: 2em;
       line-height: 0.9em;
     }
+  }
+}
+
+// Labonline specifieke button styling
+.ssButton {
+  @extend .btn;
+  &.image {
+    padding: 5px;
+    &:hover {
+      background: none;
+      border: 1px solid transparent;
+    }
+
   }
 }

@@ -1,0 +1,35 @@
+// Tabbladen bijvoorbeeld: Opzoekcriteria --> Identificatie
+.yui-navset.ui-tabset {
+  padding: 0;
+  border: none;
+  background: $white;
+  .ui-tabs-nav {
+    padding: 0;
+  }
+  .ui-corner-all {
+    @include border-radius(0);
+  }
+  .ui-widget-header {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $secondary-grey;
+    background: none;
+    .ui-state-default {
+      margin-right: 10px;
+      padding: 2px 10px;
+      border: none;
+      background: none;
+      &:hover {
+        color: $primary-color;
+      }
+      &.ui-state-active {
+        border-bottom: 2px solid $primary-color;
+        color: $primary-color;
+        &:hover {
+          border-bottom: 2px solid $primary-color-dark;
+          color: $primary-color-dark;
+        }
+      }
+    }
+  }
+}
