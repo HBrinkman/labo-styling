@@ -46,6 +46,11 @@
           border: 1px solid transparent;
         }
       }
+      &.combined {
+        padding-left: 25px;
+        background-position-y: 3px;
+        background-position-x: 3px;
+      }
     }
     [disabled].ssButton.image {
       opacity: 0.5;
