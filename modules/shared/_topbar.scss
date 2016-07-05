@@ -326,6 +326,7 @@ div.topbar {
 div#header {
   > div > table {
     width: 100%;
+    background: $white;
     border-bottom: 1px solid $secondary-grey;
     > tbody > tr {
       @include flex-direction(row);
