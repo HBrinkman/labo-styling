@@ -12,6 +12,10 @@
 //
 // Styleguide 4.0
 
+html, body {
+  font-family: Arial;
+}
+
 h1, h2, h3 {
   margin: 0 0 5px 0;
   color: $main-text-color;
