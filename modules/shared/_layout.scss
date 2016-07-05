@@ -1,0 +1,35 @@
+html, body {
+  background-color: $light-grey;
+}
+
+.contextTitle {
+  padding: 8px 20px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #E1E3E6;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 0.8125em;
+  font-weight: bold;
+  color: $secondary-text-color;
+
+
+  a {
+    text-decoration: none;
+  }
+
+  .contetxtPath {
+    font-weight: normal;
+  }
+}
+
+.fieldset {
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #E1E3E6;
+  background: #FFFFFF;
+}
+
+#footer {
+  margin: 5px 20px;
+}

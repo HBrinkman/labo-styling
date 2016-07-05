@@ -1,0 +1,9 @@
+.toolbar {
+  .ssButton {
+    &.image {
+      padding: 2px;
+      margin: 0 2px;
+      @include border-radius(5px);
+    }
+  }
+}

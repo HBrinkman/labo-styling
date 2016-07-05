@@ -405,6 +405,11 @@ table {
   }
 }
 /* line 15, globals/_typography.scss */
+html, body {
+  font-family: Arial;
+}
+
+/* line 19, globals/_typography.scss */
 h1, h2, h3 {
   margin: 0 0 5px 0;
   color: #434343;
@@ -413,51 +418,51 @@ h1, h2, h3 {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 23, globals/_typography.scss */
+/* line 27, globals/_typography.scss */
 h1 {
   font-size: 1.38462em;
   font-weight: bold;
 }
 
-/* line 28, globals/_typography.scss */
+/* line 32, globals/_typography.scss */
 h2 {
   margin: 10px 0;
   font-size: 1.61538em;
   font-weight: normal;
 }
 
-/* line 34, globals/_typography.scss */
+/* line 38, globals/_typography.scss */
 h3 {
   font-size: 1em;
   font-weight: bold;
 }
 
-/* line 39, globals/_typography.scss */
+/* line 43, globals/_typography.scss */
 h1.content-header {
   float: left;
   display: inline-block;
   line-height: 2em;
 }
 
-/* line 45, globals/_typography.scss */
+/* line 49, globals/_typography.scss */
 p {
   line-height: 1.5em;
 }
-/* line 47, globals/_typography.scss */
+/* line 51, globals/_typography.scss */
 p.error-text {
   color: #DB585C;
 }
-/* line 50, globals/_typography.scss */
+/* line 54, globals/_typography.scss */
 p strong {
   font-family: "open_sansbold", Verdana, sans-serif;
   font-weight: bold;
 }
 
-/* line 56, globals/_typography.scss */
+/* line 60, globals/_typography.scss */
 a {
   color: #59C0CA;
 }
-/* line 58, globals/_typography.scss */
+/* line 62, globals/_typography.scss */
 a:hover {
   color: #3aabb6;
 }
@@ -799,56 +804,83 @@ div.topbar .badge {
   pointer-events: auto;
 }
 
-/* line 1, modules/shared/_submenu.scss */
-ul.sidemenu {
-  padding: 81px 0 0 0;
-  position: fixed;
-  width: 200px;
-  top: 60px;
-  left: 0;
-  bottom: 0;
-  background: #2F3949;
-  z-index: z-index(sidemenu topbar dropdown fixed-sub-header sub-menu logout logo footer footer-buttons side-nav jquery-ui notifications modal, sidemenu);
+/* line 2, modules/shared/_submenu.scss */
+.toolbar .ssButton {
+  font-size: 1em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
-@media only screen and (max-width: 70em) {
-  /* line 1, modules/shared/_submenu.scss */
-  ul.sidemenu {
-    width: 40px;
-  }
-  /* line 13, modules/shared/_submenu.scss */
-  ul.sidemenu li a .sidemenu-title {
-    display: none;
-  }
-  /* line 16, modules/shared/_submenu.scss */
-  ul.sidemenu:hover {
-    width: 200px;
-  }
-  /* line 18, modules/shared/_submenu.scss */
-  ul.sidemenu:hover li a .sidemenu-title {
-    display: inline;
-  }
+/* line 3, modules/shared/_submenu.scss */
+.toolbar .ssButton.combined {
+  padding: 2px 10px;
+  margin: 5px 10px;
+  background-image: none !important;
+  background-color: inherit;
+  border: none;
+  font-size: 0.8125em;
+  color: #7D8492;
 }
-/* line 24, modules/shared/_submenu.scss */
-ul.sidemenu li a {
-  margin-left: 2px;
-  display: block;
+/* line 12, modules/shared/_submenu.scss */
+.toolbar .ssButton.combined:hover {
+  border-color: #3aabb6;
+  background-color: #3aabb6;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #59C0CA;
+  color: #FFFFFF;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* line 3, modules/shared/_toolbar.scss */
+.toolbar .ssButton.image {
+  padding: 2px;
+  margin: 0 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, modules/shared/_layout.scss */
+html, body {
+  background-color: #F4F4F4;
+}
+
+/* line 5, modules/shared/_layout.scss */
+.contextTitle {
+  padding: 8px 20px;
+  display: inline-block;
   width: 100%;
-  padding: 15px 10px;
-  color: #8C94A6;
+  position: relative;
+  border-bottom: 1px solid #E1E3E6;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 0.8125em;
+  font-weight: bold;
+  color: #7D8492;
+}
+/* line 17, modules/shared/_layout.scss */
+.contextTitle a {
   text-decoration: none;
 }
-/* line 31, modules/shared/_submenu.scss */
-ul.sidemenu li a:hover, ul.sidemenu li a.active {
-  margin-left: 0;
-  border-left: 2px solid #59C0CA;
-  color: #FFFFFF;
-  background: #4E596B;
+/* line 21, modules/shared/_layout.scss */
+.contextTitle .contetxtPath {
+  font-weight: normal;
 }
-/* line 38, modules/shared/_submenu.scss */
-ul.sidemenu li a i {
-  margin-right: 10px;
-  width: 17px;
-  text-align: center;
+
+/* line 26, modules/shared/_layout.scss */
+.fieldset {
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #E1E3E6;
+  background: #FFFFFF;
+}
+
+/* line 33, modules/shared/_layout.scss */
+#footer {
+  margin: 5px 20px;
 }
 
 /* line 18, modules/components/_buttons.scss */
