@@ -21,12 +21,11 @@ html, body {
   font-weight: bold;
   color: $secondary-text-color;
 
-
   a {
     text-decoration: none;
   }
 
-  .contetxtPath {
+  tbody > tr > td > .contetxtPath {
     font-weight: normal;
   }
 }

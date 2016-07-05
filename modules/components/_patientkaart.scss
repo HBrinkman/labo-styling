@@ -1,10 +1,10 @@
 #body {
-  .toolbar {
+  form > table.toolbar {
     padding: 5px 10px 0 10px;
     width: 100%;
     display: block;
 
-    tbody {
+    > tbody {
       background-color: $grey;
       width: 100%;
       border-collapse: separate;
@@ -14,17 +14,44 @@
 
       @include border-radius(4px 4px 0 0);
     }
+
+    .ssButton {
+      border: none;
+      background-color: #59C0CA;
+      color: $white;
+      margin: 5px;
+      padding: 5px;
+      @include border-radius(5px);
+
+      &:hover {
+        border-color: #3aabb6;
+        background-color: #3aabb6;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+      &.image {
+        padding: 2px;
+        margin: 0 2px;
+        background-color: $light-grey;
+        @include border-radius(5px);
+
+        &.narrow {
+          background-color: $grey;
+        }
+      }
+    }
   }
 
-  .fieldset {
+  div > .fieldset {
     width: 100%;
     padding: 0 10px 10px 10px;
     display: inline-block;
 
-    table{
+    > table {
       width: inherit;
 
-      tbody {
+      > tbody {
         width: inherit;
         padding: 20px;
         background-color: $white;
