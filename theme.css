@@ -799,6 +799,173 @@ div.topbar .badge {
   pointer-events: auto;
 }
 
+/* line 327, modules/shared/_topbar.scss */
+div#header > div > table {
+  width: 100%;
+  border-bottom: 1px solid #E1E3E6;
+}
+/* line 330, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 333, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+}
+/* line 335, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:first-child {
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+/* line 338, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td > table {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+/* line 342, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td > table tbody {
+  margin: 10px auto;
+}
+/* line 344, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td > table tbody tr {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+/* line 348, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td > table tbody tr td .appTitle {
+  margin: 10px 20px 0;
+}
+/* line 356, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table {
+  margin: 10px;
+}
+/* line 358, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table > tbody > tr > td {
+  display: inline-block;
+}
+/* line 360, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table > tbody > tr > td .fieldLabel {
+  font-size: 0.6875em;
+}
+/* line 364, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table > tbody > tr > td:first-child table tbody tr td {
+  text-align: right;
+  width: 100%;
+  display: block;
+  color: #7D8492;
+}
+/* line 369, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table > tbody > tr > td:first-child table tbody tr td:last-child {
+  font-size: 1em;
+  color: #434343;
+}
+/* line 375, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td:last-child form > table > tbody > tr > td:last-child {
+  float: right;
+  margin: 8px 10px;
+}
+/* line 382, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar {
+  padding: 10px 0 0 10px;
+}
+/* line 384, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item {
+  padding: 0 10px;
+  font-size: 1.3125em;
+}
+/* line 387, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item .wijmo-wijmenu-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 391, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item ul.wijmo-wijmenu-list {
+  border: 1px solid #E1E3E6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 394, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item ul.wijmo-wijmenu-list li.wijmo-wijmenu-item {
+  font-size: 0.8125em;
+}
+/* line 396, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item ul.wijmo-wijmenu-list li.wijmo-wijmenu-item .wijmo-wijmenu-text {
+  background-image: none !important;
+}
+/* line 401, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item .ui-state-focus,
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item .ui-state-hover,
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item .ui-state-active {
+  background: none;
+  color: #59C0CA;
+}
+/* line 407, modules/shared/_topbar.scss */
+div#header > div > table > tbody > tr > td .ice-ace-menu-bar li.wijmo-wijmenu-item .ui-icon-triangle-1-s {
+  display: none;
+}
+/* line 414, modules/shared/_topbar.scss */
+div#header > div > table .ui-widget-content {
+  background: #FFFFFF;
+  border: none;
+}
+
 /* line 1, modules/shared/_submenu.scss */
 ul.sidemenu {
   padding: 81px 0 0 0;
@@ -849,6 +1016,11 @@ ul.sidemenu li a i {
   margin-right: 10px;
   width: 17px;
   text-align: center;
+}
+
+/* line 1, modules/shared/_layout.scss */
+body {
+  font-family: Arial, sans-serif;
 }
 
 /* line 18, modules/components/_buttons.scss */
