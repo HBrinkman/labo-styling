@@ -322,3 +322,101 @@ div.topbar {
     pointer-events: auto;
   }
 }
+
+div#header {
+  > div > table {
+    width: 100%;
+    border-bottom: 1px solid $secondary-grey;
+    > tbody > tr {
+      @include flex-direction(row);
+      @include display(flex);
+      > td {
+        @include flex-grow(1);
+        &:first-child {
+          @include flex(none);
+        }
+        > table {
+          @include display(flex);
+          @include flex-direction(row);
+          @include align-items(center);
+          tbody {
+            margin: 10px auto;
+            tr {
+              @include display(flex);
+              @include align-items(center);
+              td {
+                .appTitle {
+                  margin: 10px 20px 0;
+                }
+              }
+            }
+          }
+        }
+        &:last-child {
+          form > table {
+            margin: 10px;
+            > tbody > tr > td {
+              display: inline-block;
+              .fieldLabel {
+                font-size: rs(11, $base-fs);
+              }
+              &:first-child {
+                table tbody tr td {
+                  text-align: right;
+                  width: 100%;
+                  display: block;
+                  color: $secondary-text-color;
+                  &:last-child {
+                    font-size: rs($base-fs);
+                    color: $main-text-color;
+                  }
+                }
+              }
+              &:last-child {
+                float:right;
+                margin: 8px 10px;
+              }
+            }
+          }
+        }
+        .ice-ace-menu-bar {
+          padding: 10px 0 0 10px;
+          li.wijmo-wijmenu-item {
+            padding: 0 10px;
+            font-size: rs(21, $base-fs);
+            .wijmo-wijmenu-text {
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+            ul.wijmo-wijmenu-list {
+              border: 1px solid $secondary-grey;
+              @include border-radius($border-radius-small);
+              li.wijmo-wijmenu-item {
+                font-size: rs(13, $base-fs);
+                .wijmo-wijmenu-text {
+                  background-image: none !important;
+                }
+              }
+            }
+            .ui-state-focus,
+            .ui-state-hover,
+            .ui-state-active {
+              background: none;
+              color: $primary-color;
+            }
+            .ui-icon-triangle-1-s {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .ui-widget-content {
+      background: $white;
+      border: none;
+      .wijmo-wijmenu-list {
+
+      }
+    }
+  }
+}
