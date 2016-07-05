@@ -3,6 +3,10 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+body {
+  padding-bottom: 31px; // Voor footer
+}
+
 * {
   box-sizing: border-box;
 }
@@ -39,4 +43,33 @@ html, body {
   color: $white;
   font-size: rs(11, $base-fs);
   background: $footer-background-color;
+}
+
+#submitMonitor {
+  display: none;
+}
+
+.topAligned {
+  vertical-align: top;
+}
+
+#body > div  > form {
+  > .fieldset {
+    padding: 20px 10px;
+    font-size: rs($base-fs);
+    width: 100%;
+    background: $white;
+    border: 1px solid $secondary-grey;
+    @include border-radius($border-radius-small);
+    @include box-shadow();
+    .fieldsetWithLegend {
+      margin: 0 10px 0 0;
+      display: inline-block;
+      border: 1px solid $grey;
+      .fieldsetLegend {
+        padding: 10px;
+        background: $grey;
+      }
+    }
+  }
 }

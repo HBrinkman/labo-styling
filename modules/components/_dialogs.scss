@@ -4,6 +4,7 @@
 
 .ui-dialog {
   padding: 0;
+  @include box-shadow();
   @include border-radius($border-radius-medium);
   .ui-dialog-content {
     padding: 0;
@@ -25,11 +26,41 @@
         }
       }
     }
+    > div:last-child {
+      padding: 10px;
+    }
+  }
+  table {
+    border-collapse: initial;
+    border-spacing: 10px;
   }
   .ui-widget-content {
     background: $white;
     .ui-tabset .ui-tabs-panel {
       padding: 0;
+      .ui-tabs-nav {
+        margin: 10px 0;
+        border: 0;
+        .ui-state-default {
+          padding: 2px 5px;
+          color: $main-text-color;
+          @include border-radius(20px);
+          &:hover {
+            color: $primary-color;
+          }
+          &.ui-state-active {
+            color: $white;
+            background: $primary-color;
+            &:hover {
+              background: $primary-color-dark;
+            }
+          }
+        }
+      }
+      table {
+        border-collapse: initial;
+        border-spacing: 10px;
+      }
     }
   }
 }

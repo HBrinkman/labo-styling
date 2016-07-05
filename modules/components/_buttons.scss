@@ -273,6 +273,7 @@ div.buttons,
 // Labonline specifieke button styling
 .ssButton {
   @extend .btn;
+  background-repeat: no-repeat;
   &.image {
     padding: 5px;
     &:hover {
@@ -280,5 +281,20 @@ div.buttons,
       border: 1px solid transparent;
     }
 
+  }
+  &.combined {
+    padding-left: 20px;
+  }
+  &[value="Vernieuwen"],
+  &[value="Toepassen"] {
+    padding: 5px 10px;
+    @extend .btn-primary;
+    &:hover {
+      background: $primary-color-dark;
+    }
+  }
+  &[value="Voorschrift aanmaken"] {
+    background-image: none !important;
+    background-repeat: no-repeat;
   }
 }

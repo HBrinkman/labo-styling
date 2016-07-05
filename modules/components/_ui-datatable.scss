@@ -1,8 +1,16 @@
 .ui-datatable {
+  border: 1px solid $secondary-grey;
+  @include border-radius($border-radius-small);
   thead > tr > th {
     &.ui-widget-header {
       background: $grey;
+      border: none;
+      border-right: 1px solid $secondary-grey;
+      border-bottom: 1px solid $secondary-grey;
       @include border-radius($border-radius-small $border-radius-small 0 0);
+      &:last-child {
+        border-right: none;
+      }
       &.ui-state-hover {
         border: 1px solid $primary-color;
       }
@@ -45,6 +53,14 @@
           }
         }
       }
+    }
+  }
+  .ui-paginator {
+    width: 100% !important;
+    &.ui-widget-header {
+      background: $grey;
+      border: none;
+      border-top: 1px solid $secondary-grey;
     }
   }
 }

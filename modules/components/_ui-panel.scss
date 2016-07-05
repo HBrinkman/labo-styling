@@ -46,17 +46,6 @@
           border: 1px solid transparent;
         }
       }
-      &[value="Toepassen"] {
-        padding: 5px 10px;
-        @extend .btn-primary;
-        &:hover {
-          background: $primary-color-dark;
-        }
-      }
-      &[value="Voorschrift aanmaken"] {
-        background-image: none !important;
-        background-repeat: no-repeat;
-      }
     }
     [disabled].ssButton.image {
       opacity: 0.5;
