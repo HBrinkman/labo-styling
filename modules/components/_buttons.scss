@@ -276,6 +276,7 @@ div.buttons,
   background-repeat: no-repeat;
   &.image {
     padding: 5px;
+    background: none;
     &:hover {
       background: none;
       border: 1px solid transparent;

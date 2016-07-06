@@ -1,0 +1,78 @@
+.splitPaneContainer {
+  .splitPane {
+    padding: 10px;
+    .fieldsetWithLegend {
+      margin: 0 10px 10px 0;
+      width: 100%;
+      position: relative;
+      border: 1px solid $secondary-grey;
+      background: $white;
+      @include box-shadow();
+      @include border-radius($border-radius-small);
+      > .fieldsetLegend {
+        padding: 10px;
+        display: block;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid $tertiary-grey;
+        background: $grey;
+        color: $secondary-text-color;
+        text-decoration: none;
+        @include border-radius($border-radius-small $border-radius-small 0 0);
+        + table {
+          border-collapse: initial;
+          border-spacing: 5px;
+        }
+      }
+      > span,
+      .yui-navset {
+        display: block;
+        border-top-color: transparent;
+        background: $white;
+        @include border-radius(0 0 $border-radius-small $border-radius-small);
+        .ui-tabs-panel {
+          padding: 0;
+          > table {
+            border-collapse: initial;
+            border-spacing: 10px;
+          }
+        }
+      }
+      > span {
+        padding: 5px;
+      }
+      table.toolbar {
+        width: auto;
+      }
+    }
+  }
+}
+
+.orderEntryPanel {
+  table.widePanel {
+    width: 100%;
+  }
+  .orderEntryForm.scalableSubElement table {
+    width: 100%;
+  }
+  + div {
+    padding: 7px 20px;
+    height: 50px !important;
+    border-top: 1px solid $secondary-grey;
+    background: $grey;
+    > div:first-child {
+      margin-top: 8px;
+    }
+    .ssButton {
+      margin-right: 10px;
+      background: $primary-color;
+      color: $white;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover {
+        background: $primary-color-dark;
+      }
+    }
+  }
+}

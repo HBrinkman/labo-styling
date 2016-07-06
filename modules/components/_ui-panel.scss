@@ -11,8 +11,7 @@
     background: $grey;
     color: $secondary-text-color;
     text-decoration: none;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    @include border-radius($border-radius-small $border-radius-small 0 0);
   }
   .ui-panel-content {
     padding: 10px;
@@ -61,4 +60,8 @@
       }
     }
   }
+}
+
+.ui-tabset .ui-tabs-panel {
+  overflow: scroll;
 }
