@@ -395,6 +395,7 @@ div#header {
               li.wijmo-wijmenu-item {
                 font-size: rs(13, $base-fs);
                 .wijmo-wijmenu-text {
+                  padding-left: 0;
                   background-image: none !important;
                 }
               }
