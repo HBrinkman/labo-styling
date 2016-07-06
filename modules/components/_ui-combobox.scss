@@ -1,0 +1,28 @@
+// Gekopïeerd van labonline theme
+.ui-combobox {
+  width: 130px !important;
+}
+
+.ui-combobox-value * {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.informationPanel .ui-inputfield.ui-widget, .informationPanel .ui-combobox,
+.informationPanel .ui-selectmenu {
+  width: 98% !important;
+  min-width: 10px;
+  box-sizing: border-box;
+}
+
+// End copy
+.ui-combobox {
+  .ui-inputfield {
+    text-overflow: ellipsis;
+  }
+}
+.ui-combobox-value,
+.ui-selectmenu-value {
+  width: 100% !important;
+}
