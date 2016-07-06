@@ -283,6 +283,11 @@ div.buttons,
     }
 
   }
+  &.combined {
+    padding-left: 25px;
+    background-position-y: 3px;
+    background-position-x: 3px;
+  }
   &[value="Vernieuwen"],
   &[value="Toepassen"] {
     padding: 5px 10px;
@@ -293,5 +298,14 @@ div.buttons,
   }
   &[value="Voorschrift aanmaken"] {
     background-repeat: no-repeat;
+  }
+}
+
+[disabled].ssButton.image {
+  opacity: 0.2;
+  border: none;
+  background: $white;
+  &:hover {
+    background: none;
   }
 }

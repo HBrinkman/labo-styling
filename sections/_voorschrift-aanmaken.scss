@@ -54,6 +54,12 @@
   }
   .orderEntryForm.scalableSubElement table {
     width: 100%;
+    span.expandable {
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
   }
   + div {
     padding: 7px 20px;
@@ -74,5 +80,31 @@
         background: $primary-color-dark;
       }
     }
+  }
+}
+
+table.toolbar {
+  .ssButton {
+    &.combined {
+      padding-left: 25px;
+      background-position-y: 7px;
+      background-position-x: 3px;
+    }
+  }
+}
+
+table.orderEntryFormCnt td,
+table.panelConfirmation td {
+  /* No automatic wrapping allowed: */
+  white-space: pre;
+}
+
+// Overzicht
+.compactTree {
+  .if-tree {
+    width: 100%;
+    overflow: auto;
+    background: $white;
+    border: none;
   }
 }

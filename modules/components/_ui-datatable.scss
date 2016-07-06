@@ -7,6 +7,7 @@
       border: none;
       border-right: 1px solid $secondary-grey;
       border-bottom: 1px solid $secondary-grey;
+      text-align: left;
       @include border-radius($border-radius-small $border-radius-small 0 0);
       &:last-child {
         border-right: none;
@@ -18,6 +19,9 @@
         color: $primary-color;
       }
     }
+  }
+  tbody.ui-datatable-data-empty {
+    display: none;
   }
   tbody.ui-datatable-data {
     > tr {

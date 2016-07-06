@@ -51,14 +51,6 @@
         background-position-x: 3px;
       }
     }
-    [disabled].ssButton.image {
-      opacity: 0.5;
-      border: none;
-      background: $white;
-      &:hover {
-        background: $grey;
-      }
-    }
   }
 }
 
