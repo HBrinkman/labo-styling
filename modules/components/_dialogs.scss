@@ -2,6 +2,22 @@
   background: rgba($black, 0.9);
 }
 
+.ace-dialog {
+  .fieldsetWithLegend .fieldsetLegend {
+    margin: 10px 0;
+  }
+
+  .fieldset {
+    .ui-inputfield {
+      width: 100%;
+    }
+
+    table {
+      width: 100%;
+    }
+  }
+}
+
 .ui-dialog {
   padding: 0;
   @include box-shadow();

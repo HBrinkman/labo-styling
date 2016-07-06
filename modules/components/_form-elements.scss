@@ -1,3 +1,17 @@
 .ui-selectmenu-value {
   margin-bottom: -5px;
 }
+
+.extraWidePanel {
+  width: 100%;
+  .ui-autocompleteentry {
+    > span {
+      width: 100%;
+    }
+  }
+
+  .ui-inputfield {
+    width: 100% !important;
+  }
+}
+
