@@ -288,9 +288,12 @@ div.buttons,
     background-position-y: 3px;
     background-position-x: 3px;
   }
+  &[value="Resetten"],
   &[value="Vernieuwen"],
-  &[value="Toepassen"] {
+  &[value="Toepassen"],
+  &[value="Deels afgenomen"]{
     padding: 5px 10px;
+    margin: 0 10px;
     @extend .btn-primary;
     &:hover {
       background: $primary-color-dark;
