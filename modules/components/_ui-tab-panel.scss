@@ -1,0 +1,86 @@
+#body > div > .ui-tabset.ui-widget {
+  padding: 0 10px 10px;
+  border: none;
+  background: none;
+
+  > .ui-tabs-nav {
+    display: block;
+    width: 100%;
+    border: 1px solid $secondary-grey;
+    background: $grey;
+    color: $white;
+    text-decoration: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    @include border-radius(4px 4px 0 0);
+
+    li.ui-state-default.ui-corner-top {
+      background: none;
+      border: transparent;
+      margin-left: 10px;
+      font-weight: bold;
+      padding: 5px 20px;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.ui-state-active {
+        background: none;
+        border: transparent;
+        border-bottom: 2px solid $primary-color;
+        color: #59C0CA;
+
+        &:hover {
+          color: $primary-color-dark;
+           border-bottom: 2px solid $primary-color-dark;
+        }
+      }
+
+      .yui-navdiv {
+        padding: 5px 20px;
+      }
+    }
+  }
+
+  > .ui-tabs-panel {
+    background-color: $white;
+    border: 1px solid $secondary-grey;
+    border-top: transparent;
+    @include border-radius(0 0 4px 4px );
+
+    form > table.toolbar {
+      padding: 5px 0 0 0;
+
+      > tbody {
+        background: none;
+        border: none;
+      }
+    }
+
+    .ssButton {
+      padding: 5px 10px 5px 25px;
+      margin: 0 10px 0 0;
+      background-position-y: 3px;
+      background-position-x: 3px;
+      @extend .btn;
+      &.image {
+        padding: 5px;
+        &:hover {
+          background: none;
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+    [disabled].ssButton.image {
+      opacity: 0.5;
+      border: none;
+      background: $white;
+      &:hover {
+        background: $grey;
+      }
+    }
+  }
+}
