@@ -13,9 +13,9 @@ $base-fs: 16;
 $normal-fs: 13;
 
 // Base font settings
-$default-font: "open_sansregular",Arial, sans-serif;
-$default-font-bold: "open_sanssemibold", Arial, sans-serif;
-$font-header: "open_sansbold", Verdana, sans-serif;
+$default-font: Arial, sans-serif;
+$default-font-bold: Arial, sans-serif;
+$font-header: Verdana, sans-serif;
 
 //Line-height
 $default-line-height: rs(27, $normal-fs);
@@ -55,28 +55,9 @@ $secondary-text-color: #7D8492;
 $tertiary-text-color: #B3B3AF;
 $placeholder-text-color: #C0C4C9;
 
-// Topbar
-$topbar-primary-background-color: $white;
-$topbar-primary-text-color: $main-text-color;
-$topbar-primary-font: "open_sansbold", Arial, sans-serif;
-$topbar-secondary-background-color: $primary-color;
-$topbar-secondary-text-color: $white;
-$topbar-tertiary-text-color: #7C8492;
-$topbar-menu-background-color: #344052;
-$topbar-menu-header-color: #707B8C;
-$topbar-menu-header-border: 1px solid #71777C;
-$topbar-menu-body-color: $white;
-$topbar-menu-body-border: 1px solid #495465;
-$topbar-menu-body-link-hover-color: #717b8c;
-
 $footer-background-color: #2F3949;
 $footer-link-color: #8C94A6;
 $footer-link-hover-bg-color: #4E596B;
-
-// Mijn gesprekken
-$bericht-systeem-bg-color: #B8EEFF;
-$bericht-eigen-bg-color: #DBEDF2;
-$bericht-eigen-border-color: #D0E7ED;
 
 // Feedback kleuren
 // Error colors
@@ -129,12 +110,6 @@ $btn-disabled-bg: $grey;
 $btn-disabled-border-color: $grey;
 $btn-disabled-color: $grey;
 
-// Alerts
-$alert-fs: 13px !default;
-$alert-padding: 10px !default;
-$alert-margin-bottom: 10px !default;
-$alert-border-radius: 3px !default;
-
 // Alert colors
 $alert-succes-bg: $success-lighter-green;
 $alert-succes-color: $success-darker-green;
@@ -149,65 +124,3 @@ $alert-warning-btn-border: #8A6D3B !default;
 
 $alert-error-bg: $error-lighter-red;
 $alert-error-color: $error-darker-red;
-
-// Modal colors
-$tz-modal-text-color: $main-text-color;
-$tz-modal-bg-color: $white;
-
-$tz-modal-header-bg: $grey;
-$tz-modal-header-padding: 10px 20px;
-$tz-modal-header-fs: 1.1em;
-$tz-modal-header-lineheight: 1.6em;
-$tz-modal-header-border: 1px solid $tertiary-grey;
-
-$tz-modal-footer-bg: $grey;
-$tz-modal-footer-btn-text-color: $main-text-color;
-$tz-modal-footer-btn-secondary-text-color: #FFF !default;
-
-// Tooltips
-$qtip-max-width: 320px !default;
-$qtip-bg: $very-dark-grey;
-$qtip-border-color: transparent;
-$qtip-fs: rs($base-fs);
-$qtip-line-height: 16 !default;
-$qtip-color: $white;
-
-// Datepicker
-$db_font_color:			$main-text-color;
-$dp_normal_fs: 			rs($base-fs);
-
-$dp_width: 				auto;
-$dp_height: 			35px;
-
-$dp_bg: 				$white;
-
-// Feedback colors
-$dp_bg_error: 			$error-red;
-$dp_bg_warning: 		$warning-yellow;
-$dp_bg_succes: 			$success-green;
-
-$dp_border_radius: 		4px;
-$dp_border_color:       1px solid $secondary-grey;
-
-// table pagination
-$table-navigator-padding: 4px 0 !default;
-$table-pagination-icon-width: 16px !default;
-$table-pagination-icon-height: 16px !default;
-$table-pagination-icon-url: none;
-$table-pagination-pagelink-padding: 4px 8px !default;
-$table-pagination-pagelink-margin: 0 2px !default;
-$table-pagination-pagelink-bg: #fff !default;
-$table-pagination-pagelink-border-radius: 2px !default;
-$table-pagination-pagelink-fs: 13px !default;
-$table-pagination-pagelink-lh: 1em !default;
-$table-pagination-pagelink-color: $main-text-color;
-$table-pagination-active-bg: $primary-color;
-$table-pagination-active-color: $white;
-$table-pagination-first-pos: 0 0 !default;
-$table-pagination-prev-pos: -17px 0 !default;
-$table-pagination-next-pos: -31px 0 !default;
-$table-pagination-last-pos: -48px 0 !default;
-$table-pagination-icon-disabled-opacity: 0.5;
-
-// Question answer overrides
-$question-margin-bottom: 10px;

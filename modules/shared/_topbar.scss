@@ -59,7 +59,7 @@ div#header {
           padding: 10px 0 0 10px;
           li.wijmo-wijmenu-item {
             padding: 0 10px;
-            font-size: rs(21, $base-fs);
+            font-size: 13px;
             .wijmo-wijmenu-text {
               font-weight: bold;
               text-transform: uppercase;
@@ -68,7 +68,7 @@ div#header {
               border: 1px solid $secondary-grey;
               @include border-radius($border-radius-small);
               li.wijmo-wijmenu-item {
-                font-size: rs(13, $base-fs);
+                font-size: 11px;
                 .wijmo-wijmenu-text {
                   padding-left: 0;
                   background-image: none !important;
