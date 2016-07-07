@@ -17,7 +17,7 @@ $btn-default-color: $primary-color;
 $btn-default-border: 1px solid transparent;
 $btn-default-radius: 2px;
 $btn-default-margin-bottom: 0;
-$btn-default-padding: 0;
+$btn-default-padding: 5px 10px;
 $btn-default-fs: rs($base-fs);
 $btn-primary-bg: $primary-color;
 $btn-primary-border-color: $primary-color;
@@ -238,7 +238,6 @@ div.buttons,
 
 .btn {
   margin: 0;
-  padding: 10px 15px;
   &.btn-primary {
     &.btn-disabled {
       color: $disabled-color;
@@ -292,7 +291,6 @@ div.buttons,
   &[value="Vernieuwen"],
   &[value="Toepassen"],
   &[value="Deels afgenomen"]{
-    padding: 5px 10px;
     margin: 0 10px;
     @extend .btn-primary;
     &:hover {

@@ -52,18 +52,26 @@
   table.widePanel {
     width: 100%;
   }
-  .orderEntryForm.scalableSubElement table {
-    width: 100%;
-    span.expandable {
-      &:hover {
-        color: $primary-color;
-        cursor: pointer;
+  .orderEntryForm.scalableSubElement {
+    padding: 10px;
+    table {
+      width: 100%;
+      border-collapse: initial;
+      border-spacing: 5px;
+      span.expandable {
+        &:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+      span.text {
+        padding-left: 10px;
       }
     }
   }
   + div {
     padding: 7px 20px;
-    height: 50px !important;
+    height: 40px !important;
     border-top: 1px solid $secondary-grey;
     background: $grey;
     > div:first-child {
